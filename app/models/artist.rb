@@ -11,6 +11,6 @@ class Artist < ActiveRecord::Base
   end
 
   def genre_count
-    self.songs.map {|s| s.genre}
+    self.songs.map {|s| s.genre}.size
   end
 end
